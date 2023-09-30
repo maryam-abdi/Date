@@ -1,0 +1,44 @@
+body{
+    background: url("../imgs/scattered-forcefields\ \(3\).svg");
+}
+.main_section{
+    box-shadow: 2px 2px 18px rgb(230, 230, 230);
+    .cart-section{
+        border-radius: 12px 12px 100px 12px;
+        .cart-inter{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            margin-right: 10px;
+            
+        }
+        .cart-inter input{
+           
+            border: 1px solid rgb(207, 207, 207);
+            border-radius: 4px;
+            padding: 2px;
+           
+        }
+      
+        .cart-inter label{
+        font-size: 10px;
+        margin-bottom: 4px;
+        color: rgb(82, 82, 82);
+        }
+        .cart-date{
+            display: flex;
+            margin-bottom: 5px;
+            font-size: 52px;
+            font-weight: bold;
+            font-style: italic;
+           .num-date{
+            color: #800080;
+            font-style: normal;
+
+           }
+        }
+        
+    }
+}

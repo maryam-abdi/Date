@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .cart-date h2{
+        @apply text-6xl l:text-5xl  md:text-5xl sm:text-4xl xs:text-3xl  ;
+    }
+    .input-date{
+        @apply w-[120px] h-[60px]  3xl:w-[110px] 3xl:h-[40px] xl:w-[80px] xl:h-[30px]  l:w-[90px] l:h-[40px] md:w-[70px] md:h-[30px] sm:w-[90%] sm:h-[40px] ;
+    }
+    
+}

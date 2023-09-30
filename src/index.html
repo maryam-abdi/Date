@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body class="flex justify-center items-center">
+    <section
+      class="main_section relative w-[70%] h-[500px] bg-[#ECF1FF] mx-auto mt-20 flex justify-center items-center"
+    >
+      <div
+        class="cart-section w-[50%] h-[400px] sm:h-[470px] sm:flex sm:flex-col sm:justify-between sm:items-center l:w-[70%] bg-white rounded-xl px-5 lg:px-5 xs:px-2 xxs:px-1"
+      >
+        <div
+          class="w-[85%] sm:w-[98%] flex justify-start sm:justify-center items-center sm:flex-col px-4 sm:px-8 xl:px-4 lg:px-0 xs:px-2 xxs:px-1 pt-4 pb-8 3xl:pb-4 border-b"
+        >
+          <div class="cart-inter">
+            <label for="month">MONTH</label>
+            <input
+              type="number"
+              min="1"
+              max="12"
+              class="input-date"
+              id="month"
+            />
+          </div>
+          <div class="cart-inter">
+            <label for="day">DAY</label>
+            <input type="number" min="1" max="31" class="input-date" id="day" />
+          </div>
+          <div class="cart-inter">
+            <label for="year">YEAR</label>
+            <input type="number" class="input-date" max="2023" id="year" />
+          </div>
+          <button class="add-date-btn flex justify-center items-center mt-4">
+            <!-- <div
+              class="w-[40px] h-[40px] 3xl:w-[35px] 3xl:h-[35px] 2xl:w-[30px] 2xl:h-[30px] rounded-full bg-white flex justify-center items-center"
+            >
+              <div
+                class="w-[30px] h-[30px] 3xl:w-[20px] 3xl:h-[20px] 2xl:w-[30px] 2xl:h-[30px] rounded-full bg-[#800080] flex justify-center items-center"
+              ></div>
+            </div> -->
+            <ion-icon
+              name="radio-button-on-outline"
+              class="w-[60px] h-[60px] text-[#800080]"
+            ></ion-icon>
+          </button>
+        </div>
+
+        <div
+          class="w-[85%] flex flex-col justify-start items-start px-10 l:px-2 xxs:px-1 py-5"
+        >
+          <div class="cart-date">
+            <h2 class="num-date" id="cart-date-year">0000</h2>
+            <h2>years</h2>
+          </div>
+          <div class="cart-date">
+            <h2 class="num-date" id="cart-date-month">00</h2>
+            <h2>months</h2>
+          </div>
+          <div class="cart-date">
+            <h2 class="num-date" id="cart-date-day">00</h2>
+            <h2>days</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
